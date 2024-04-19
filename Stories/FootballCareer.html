@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Story Choices - ADVENTURE GAMES!</title>
-    <link rel="stylesheet" href="/CSS/Game Site/Adventure.css" />
+    <link rel="stylesheet" href="/CSS Stories/FootballCareer.css" />
   </head>
   <body>
     <!-- Header -->
     <header id="header">
       <h1>STORY CHOICES</h1>
-      <h3>RACING GAMES!</h3>
+      <h3>FOOTBALL CAREER</h3>
     </header>
 
     <!-- Main Container -->
@@ -47,50 +47,29 @@
         </form>
       </aside>
 
-      <!-- Main content section -->
-      <main id="mainContent">
-        <!-- Game Card -->
-        <div class="game-card">
-          <img src="/SubMenu/f1.png" alt="Game Image" class="game-image" />
-          <div class="game-description">
-            <h3>F1 RACING CHAMPIONSHIP</h3>
-            <p>---------------------------------------------------------</p>
-            <p>
-              F1 Racing Championship" brings the thrill of F1 racing to life.
-              Dive into a story mode where you climb from rookie to world
-              champion, experiencing the high-speed challenges and victories of
-              a professional racer.
-            </p>
-          </div>
-          <button class="play-button" onclick="location.href='game-link.html'">
-            Play
-          </button>
-        </div>
+      <div id="gameContent">
+        <h2 id="gameTitle">GAME TITLE</h2>
+        <img
+          id="Game-images"
+          src="/Stories/Transfer window.png"
+          alt="Transfer-window-img"
+          height="200"
+          width="400"
+        />
 
-        <!-- Game Card for Game 2 -->
-        <div class="game-card">
-          <img
-            src="/SubMenu/f1design.png"
-            alt="Game 2 Image"
-            class="game-image"
-          />
-          <div class="game-description">
-            <h3>DESIGN YOUR OWN CAR</h3>
-            <p>
-              --------------------------------------------------------- Design
-              F1 Car puts you in the engineer's seat, where you can create and
-              customize your own Formula 1 racer. tweak many features such
-              adjust the engine, and choose your livery to compete on the global
-              stage and dominate the circuit.
-            </p>
-          </div>
-          <button class="play-button" onclick="location.href='game2-link.html'">
-            Play
-          </button>
+        <div id="gameContent">
+          <!-- Title will be set by JavaScript -->
+          <h2 id="gameTitle"></h2>
+          <!-- Image will be set by JavaScript -->
+          <!-- Initial story content -->
+          <p id="storyContent">
+            Scoring a 92 minute winner for Wrexham FC, getting promoted to the
+            Premier League. A transfer for you comes in from Manchester United.
+          </p>
+          <!-- Container for reader choices will be filled by JavaScript -->
+          <div id="readerChoices"></div>
         </div>
-
-        <!-- Add more game cards as needed -->
-      </main>
+      </div>
 
       <!-- Right Sidebar -->
       <aside id="rightSidebar">
@@ -102,6 +81,9 @@
         </ul>
       </aside>
     </div>
+
+    <!--JS LINK-->
+    <script src="/Stories/JavaScript/FootballCareer-Script.js"></script>
 
     <!-- Footer -->
     <footer id="footer">

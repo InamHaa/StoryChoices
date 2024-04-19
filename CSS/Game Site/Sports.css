@@ -201,10 +201,10 @@ button[type="submit"]:hover {
   margin: 40px 0; /* Adds vertical margin for spacing */
 }
 
-/* Styles for the footer */
+/* Footer styles */
 #footer {
-  background-color: #333; /* Darker grey background for the footer */
-  padding: 20px; /* Spacing inside the footer */
-  text-align: center; /* Centers the text inside the footer */
+  background-color: #333;
   color: white;
+  padding: 20px;
+  text-align: center;
 }
