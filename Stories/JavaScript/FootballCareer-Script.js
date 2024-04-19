@@ -52,9 +52,127 @@ const gameStates = {
     title: "ARRIVED AT TRAINING",
     content:
       "Adnan, Arrived at home, Rested off and watch TV. The next day waking up \
-    Adnan had a notfication on the phone, that he had training.",
+    Adnan had a notfication on the phone, that he had training. In training its an 11 vs 11 \
+    During the training match Adnan got a penalty, Where should he shoot?",
     image: "/Stories/JavaScript/Training.jpeg", // Path relative to your HTML file
-    choices: [{ text: "PLAY FIRST ROUND OF FA CUP", next: "FACUPFIRSTMATCH" }],
+    choices: [
+      { text: "Top Right", next: "Topright" },
+      { text: "Tope Left", next: "Topleft" },
+    ],
+  },
+
+  //POSITVIE SIDE
+  Topleft: {
+    title: "ADNAN SHOT TOP LEFT",
+    content:
+      "ADNAN MISSED THE PENALTY! The players picked him up and said 'it's okay we go again! \
+      Training finishes, adnan goes home and rests for the FA CUP FINAL Match'",
+    image: "/Stories/JavaScript/topleft.png", // Path relative to your HTML file
+    choices: [{ text: "Go to Stadium", next: "FACUPFIRSTMATCH" }],
+  },
+
+  //POSITVIE SIDE
+  Topright: {
+    title: "ADNAN SCORES!!!",
+    content:
+      "ADNAN SCORES THE WINNING GOAL OF THE MATCH! MATCH ENDS 1-0 The manager comes up to Adnan, \
+      and says 'You are going to start the FA Cup Final tomorrow!",
+    image: "/Stories/JavaScript/topright.png", // Path relative to your HTML file
+    choices: [{ text: "PLAY FA CUP MATCH", next: "FACUPFIRSTMATCH" }],
+  },
+
+  //POSITVIE SIDE
+  FACUPFIRSTMATCH: {
+    title: "FA CUP FINAL",
+    content:
+      "WREXHAM FC VS MANCHESTER UNITED! Adnan, Arrived to wembley stadium, he was ready and so was the team. \
+      LETS PLAY THE MATCH! ",
+    image: "/Stories/JavaScript/manutdvswrexham.png", // Path relative to your HTML file
+    choices: [{ text: "KICK OFF", next: "kickoff" }],
+  },
+
+  //POSITVIE SIDE
+  kickoff: {
+    title: "FA CUP FINAL",
+    content:
+      "The Match starts, The ball is played to Adnan, Adnan goes down the wing with the ball using all his pace, he crosses the ball into \
+      the box and JAMES comes lying in with a WONDERFUL HEADER AND SCORES FOR WREXHAM! (SCORE 1-0 WREXHAM) \
+      The Manchester United players take the kick off quickly and all of suddon they are on the attack, Marcus Rashford \
+      goes down the middle, passing the ball to Garnacho, Garnacho is through 1-1 with the keeper but Harrison can only get to him \
+      if he fouls him, WHAT SHOULD HARRISON LET HIM SCORE OR TACKLE HIM?",
+    image: "/Stories/JavaScript/goaltowrexham.png", // Path relative to your HTML file
+    choices: [
+      { text: "TACKLE GARNACHO", next: "redcard" },
+      { text: "LET GARNACHO SCORE", next: "GOAL" },
+    ],
+  },
+
+  //POSITVIE SIDE
+  redcard: {
+    title:
+      "HARRISON TACKLES GARNACHO AND RECEIVES A RED CARD - PENALTY GIVEN TO MANCHESTER UNITED!",
+    content:
+      "Harrison has been sent off as he has fouled Garnacho on a clear goal scoring chance, PENALTY TO MANCHESTER UNITED. \
+      Marcus Rashford steps up to take the penalty which way will the keeper dive to save it?",
+    image: "/Stories/JavaScript/penalty.png", // Path relative to your HTML file
+    choices: [
+      { text: "BOTTOM RIGHT", next: "bottomright" },
+      { text: "BOTTOM LEFT", next: "bottomleft" },
+    ],
+  },
+
+  //POSITVIE SIDE
+  GOAL: {
+    title: "GARNACHO SCORES GIVES THE LEAD TO MANCHESTER UNITED! 2-1",
+    content:
+      "Garnacho leads manchester united by 1 goal in the FA Cup Final. Wrexham Kick off once again, the ball is played to Adnan \
+        but he fails to keep it and gets tackled, James wins the ball back off the united players and passes it back to Adnan where he \
+        is through on goal LAST CHANCE, CAN HE SCORE IF HE MISSES WREXHAM LOSE?",
+    image: "/Stories/JavaScript/goalgarnacho.png", // Path relative to your HTML file
+    choices: [{ text: "SHOOT TOP RIGHT", next: "matchends" }],
+  },
+
+  //POSITVIE SIDE
+  GOAL: {
+    title: "MANCHESTER UNITED HAVE WON THE FA CUP FINAL!",
+    content:
+      "Adnan missed the shot and the game ends FINAL RESULT 2-1 TO MANCHESTER UNITED ",
+    content: "Thank you for playing",
+    image: "/Stories/JavaScript/manutdwin.png", // Path relative to your HTML file
+    choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
+  },
+
+  //POSITVIE SIDE
+  bottomright: {
+    title: "MARCUS RASFORD GIVES THE LEAD TO MANCHESTER UNITED SCORE 2-1!",
+    content:
+      "Marcus Rashford leads manchester united by 1 goal in the FA Cup Final. Wrexham Kick off once again, the ball is played to Adnan \
+      but he fails to keep it and gets tackled, James wins the ball back off the united players and passes it back to Adnan where he \
+      is through on goal, CAN HE SCORE?",
+    image: "/Stories/JavaScript/goalrashford.png", // Path relative to your HTML file
+    choices: [
+      { text: "SHOOT TOP RIGHT", next: "Shoottopright" },
+      { text: "SHOOT BOTTOM LEFT", next: "shootbottomleft" },
+    ],
+  },
+
+  //POSITVIE SIDE
+  Shoottopright: {
+    title: "ADNAN SCORES ITS LEVEL 2-2!",
+    content:
+      "ADNAN Scores with a wonderful shot into the top right, its 2-2 and Wrexham are on the last attack Adnan has the ball \
+      He passes to Harrison, Harrison goes for the header, Where does he shoot?",
+    image: "/Stories/JavaScript/wrexhamgoal.png", // Path relative to your HTML file
+    choices: [{ text: "HEADER LEFT", next: "FINALGOAL" }],
+  },
+
+  //POSITVIE SIDE
+  FINALGOAL: {
+    title: "WREXHAM WIN THE FA CUP FINAL!",
+    content:
+      "Adnan with the assist and a goal by harrison a perfet maatch, WELL DONE WREXHAM!",
+    image: "/Stories/JavaScript/winners.png", // Path relative to your HTML file
+    choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
   },
 
   //NEGATIVE SIDE
