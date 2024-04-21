@@ -29,6 +29,7 @@ aside {
 /* Styles for the main content area */
 #mainContent {
   background-color: white;
+  min-height: calc(100vh - 150px);
   flex-grow: 1; /* Allows the main content to expand and fill the available space */
   padding: 20px; /* Spacing inside the main content area */
 }
