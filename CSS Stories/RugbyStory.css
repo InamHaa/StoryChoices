@@ -1,11 +1,11 @@
-/* Basic reset */
+/* resetting default browser styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Header styles */
+/* styling the header */
 #header {
   background-color: #333;
   color: white;
@@ -13,15 +13,14 @@
   text-align: center;
 }
 
-/* Flex container for main content and sidebars */
+/* hoding the sidemenus and  main content */
 #mainContainer {
   display: flex;
-  flex-direction: row; /* ensures sidebars and content are in a row */
-  min-height: 100vh; /* new line to ensure full height of the viewport */
+  flex-direction: row;
+  min-height: 100vh;
   align-items: flex-start;
 }
 
-/* Styles for sidebars */
 aside {
   background-color: white;
   color: black;
@@ -29,30 +28,28 @@ aside {
   width: 20%;
 }
 
-/* Specific styles for headings in the left sidebar */
 #leftSidebar h2 {
-  color: black; /* Sets the color of H2 headings to white */
+  color: black;
 }
 
 /* Left Side Menu */
-/* Removes default list styles and adds space between menu items */
 #leftSidebar ul {
-  list-style-type: none; /* Removes bullet points from the list */
-  padding: 0; /* Removes padding from the list */
-  margin: 0; /* Removes margin from the list */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #leftSidebar ul li {
-  padding: 8px 0; /* Adds vertical padding to each list item for better readability */
+  padding: 8px 0;
 }
 
 #leftSidebar ul li a {
-  text-decoration: none; /* Removes underlines from links */
-  color: #333; /* Sets link color to white */
-  font-weight: normal; /* Makes link text bold */
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
 }
 
-/* Hiding the submenu by default */
+/* hiding the submenu */
 .submenu {
   display: none;
   position: absolute;
@@ -61,12 +58,11 @@ aside {
   z-index: 1;
 }
 
-/* Displaying the submenu when hovering over the parent item */
 .submenu-parent:hover .submenu {
   display: block;
 }
 
-/* Styling for submenu items */
+/* styling submenu  */
 .submenu a {
   color: black;
   padding: 12px 16px;
@@ -78,12 +74,10 @@ aside {
   background-color: #f1f1f1;
 }
 
-/* Ensure the parent menu item stays highlighted when hovering over the submenu */
 .submenu-parent:hover > a {
-  background-color: #ddd; /* Change this color to suit your design */
+  background-color: #ddd;
 }
 
-/* Main content styles */
 #mainContent {
   background-color: white;
   flex-grow: 1;
@@ -92,31 +86,30 @@ aside {
 
 /* Image and text content */
 #gameContent {
-  /* Only one declaration of #gameContent is necessary */
   flex-grow: 1; /* Make sure it takes the remaining space */
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: flex-start; /* Align children to the top */
-  padding: 20px; /* Add padding inside the container */
-  width: 60%; /* Adjust width as necessary */
-  margin: 0 auto; /* Center the container */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #storyContent {
   border: 2px solid black;
   padding: 15px;
   background-color: #f9f9f9;
-  margin: 20px 0; /* Adjust space above and below the text box */
-  text-align: center; /* Center-align the text inside the box */
-  width: 100%; /* Use full width of the game content container */
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 #readerChoices {
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 10px; /* Add space between buttons */
-  margin-bottom: 20px; /* Add space below the buttons */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 /* Button styles */
@@ -135,15 +128,12 @@ button[type="submit"]:hover,
   background-color: #0c47a1;
 }
 
-/* adding a width or max-width */
 #readerChoices button {
-  width: 150px; /* Fixed width for buttons */
-  max-width: 100%; /* Ensures that buttons don't overflow their container */
+  width: 150px;
   text-align: center;
 }
 
 /* Right Side Menu */
-/* Repeats the removal of list styles and padding for the right sidebar */
 #rightSidebar ul {
   list-style-type: none;
   padding: 0;
@@ -167,14 +157,13 @@ button[type="submit"]:hover,
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-  /* Adjusts layout for screens narrower than 768px */
   #mainContainer {
-    flex-direction: column; /* Stacks flex items vertically */
+    flex-direction: column;
   }
 
   aside {
-    width: 100%; /* Each sidebar takes full width of the screen */
-    margin-bottom: 20px; /* Adds space between stacked items */
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

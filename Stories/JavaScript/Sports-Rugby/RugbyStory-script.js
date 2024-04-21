@@ -140,28 +140,20 @@ const gameStates = {
     image: "/Stories/images/Rugbystory/lost.png",
     choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
   },
-  // Additional states and choices can be added to expand the story.
 };
 
-// Function to display the game state on the screen
+// function to display the gamestate on screen
 function showGameState(stateKey) {
   const state = gameStates[stateKey]; // Get the current state using the key
+  document.getElementById("gameTitle").textContent = state.title; // updating the game title
+  document.getElementById("storyContent").textContent = state.content; // updating the main content of story
+  document.getElementById("Game-images").src = state.image; // updating the images each time
 
-  // Update the game title
-  document.getElementById("gameTitle").textContent = state.title;
-
-  // Update the main content
-  document.getElementById("storyContent").textContent = state.content;
-
-  // Update the image source
-  document.getElementById("Game-images").src = state.image;
-
-  // Clear previous choices
-  const choicesContainer = document.getElementById("readerChoices");
+  const choicesContainer = document.getElementById("readerChoices"); //clearing the previous choices
   choicesContainer.innerHTML = "";
 
-  // Create buttons for new choices
   state.choices.forEach((choice) => {
+    // buttons for new choices
     const button = document.createElement("button");
     button.textContent = choice.text;
     button.onclick = () => showGameState(choice.next);
@@ -169,5 +161,5 @@ function showGameState(stateKey) {
   });
 }
 
-// Start the game by showing the start state
+//(DONT MOVE starts the gamestate )
 showGameState("start");

@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="/CSS/Game Site/random.css" />
   </head>
   <body>
-    <!-- Header -->
     <header id="header">
       <h1>STORY CHOICES</h1>
       <h3>NEW STORIES!</h3>
     </header>
 
-    <!-- Main Container -->
     <div id="mainContainer">
-      <!-- Left Sidebar -->
+      <!-- Left Sidemenu -->
       <aside id="leftSidebar">
         <h2>MENU</h2>
         <ul>
           <li><a href="/index.html">HOME</a></li>
           <li class="submenu-parent">
-            <a href="Storygames.html">STORY GAMES</a>
+            <a href="#">STORY GAMES</a>
             <ul class="submenu">
               <li><a href="/SubMenu/Random.html">RANDOM</a></li>
               <li><a href="/SubMenu/Adventure.html">ADVENTURE</a></li>
@@ -36,34 +34,28 @@
         </ul>
         <!-- Search Bar -->
         <form action="/search" method="get">
-          <input
-            type="search"
-            id="siteSearch"
-            name="q"
-            placeholder="Search Games"
-            aria-label="Search through site content"
-          />
+          <input type="search" id="siteSearch" placeholder="Search Games" />
           <button type="submit">Search</button>
         </form>
       </aside>
 
       <!-- Main content section -->
       <main id="mainContent">
-        <!-- Game Card -->
-        <div class="game-card">
+        <!-- Stories -->
+        <div class="story">
           <img
             src="/SubMenu/Football Career image.png"
-            alt="Game Image"
-            class="game-image"
+            alt="story Image"
+            class="story-image"
           />
-          <div class="game-description">
+          <div class="story-description">
             <h3>Football Player Career</h3>
             <p>
               Want to experince a football career, then play this you can
               control your players career and lead them to success.
             </p>
           </div>
-          <!--button Play link it to game-->
+          <!--button Play story-->
           <button
             class="play-button"
             onclick="location.href='/Stories/FootballCareer.html'"
@@ -72,50 +64,42 @@
           </button>
         </div>
 
-        <div class="game-card">
-          <img
-            src="/SubMenu/Screenshot 2024-04-02 at 14.24.27.png"
-            alt="Game Image"
-            class="game-image"
-          />
-          <div class="game-description">
+        <div class="story">
+          <img src="/SubMenu/maze.png" alt="story Image" class="story-image" />
+          <div class="story-description">
             <h3>The Maze</h3>
-            <p>-----------------------------------------------------</p>
             <p>
               Take control of a man or women in the maze, where you never know
               what will be around the corner!
             </p>
           </div>
-          <button class="play-button" onclick="location.href='game-link.html'">
+          <button class="play-button" onclick="location.href='maze-story.html'">
             Play
           </button>
         </div>
 
-        <!-- Game Card for Game 2 -->
-        <div class="game-card">
+        <div class="story-card">
           <img
             src="/SubMenu/lostguy.png"
-            alt="Game 2 Image"
-            class="game-image"
+            alt="story 2 Image"
+            class="story-image"
           />
-          <div class="game-description">
+          <div class="story-description">
             <h3>The Lost Man</h3>
-            <p>-----------------------------------------------------</p>
             <p>
               A person that is lost in his dreams, and you can control him and
               guide him back to reality!
             </p>
           </div>
-          <button class="play-button" onclick="location.href='game2-link.html'">
+          <button class="play-button" onclick="location.href='lostguy.html'">
             Play
           </button>
         </div>
 
-        <div class="game-card">
-          <img src="/SubMenu/f1.png" alt="Game Image" class="game-image" />
-          <div class="game-description">
+        <div class="story-card">
+          <img src="/SubMenu/f1.png" alt="story Image" class="story-image" />
+          <div class="story-description">
             <h3>F1 RACING CHAMPIONSHIP</h3>
-            <p>---------------------------------------------------------</p>
             <p>
               F1 Racing Championship" brings the thrill of F1 racing to life.
               Dive into a story mode where you climb from rookie to world
@@ -123,12 +107,10 @@
               a professional racer.
             </p>
           </div>
-          <button class="play-button" onclick="location.href='game-link.html'">
+          <button class="play-button" onclick="location.href='f1.html'">
             Play
           </button>
         </div>
-
-        <!-- Add more game cards as needed -->
       </main>
 
       <!-- Right Sidebar -->

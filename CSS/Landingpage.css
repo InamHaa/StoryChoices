@@ -1,78 +1,75 @@
 /* Resets some default browser styles */
 * {
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-  margin: 0; /* Removes the default margin from all elements */
-  padding: 0; /* Removes the default padding from all elements */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Styles for the header */
 #header {
-  background-color: #333; /* Light grey background for the header */
+  background-color: #333;
   color: #fff;
-  padding: 20px; /* Spacing inside the header */
-  text-align: center; /* Centers the text inside the header */
+  padding: 20px;
+  text-align: center;
 }
 
-/* The container that holds the sidebars and the main content */
+/* holding the sidemenus and the main content */
 #mainContainer {
-  display: flex; /* Enables flexbox layout, allowing child elements to be aligned flexibly */
+  display: flex;
 }
 
 .text-content {
-  font-size: 18px; /* Sets the text size */
-  line-height: 1.5; /* Sets the space between lines */
-  border: 2px solid #000; /* Black border around the text */
-  padding: 15px; /* Space inside the border around the text */
+  font-size: 18px;
+  line-height: 1.5;
+  border: 2px solid #000;
+  padding: 15px;
 }
 
-/* Styles for both sidebars */
+/* Styles both sidemenus */
 aside {
-  background-color: white; /* Light grey background for the sidebars */
-  color: black;
-  padding: 20px; /* Spacing inside the sidebars */
-  width: 20%; /* Sets the width of the sidebars to 20% of their parent container */
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 20%;
 }
 
 /* Styles for the main content area */
 #mainContent {
+  min-height: calc(100vh - 160px);
   background-color: white;
-  flex-grow: 1; /* Allows the main content to expand and fill the available space */
-  padding: 20px; /* Spacing inside the main content area */
+  padding: 20px;
 }
 
-/* Specific styles for headings in the left sidebar */
 #leftSidebar h2 {
-  color: black; /* Sets the color of H2 headings to white */
+  color: black;
 }
 
 /* Left Side Menu */
-/* Removes default list styles and adds space between menu items */
 #leftSidebar ul {
-  list-style-type: none; /* Removes bullet points from the list */
-  padding: 0; /* Removes padding from the list */
-  margin: 0; /* Removes margin from the list */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #leftSidebar ul li {
-  padding: 8px 0; /* Adds vertical padding to each list item for better readability */
+  padding: 8px 0;
 }
 
 #leftSidebar ul li a {
-  text-decoration: none; /* Removes underlines from links */
-  color: #333; /* Sets link color to white */
-  font-weight: normal; /* Makes link text bold */
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
 }
 
-/* Hiding the submenu by default */
+/* hiding submenu */
 .submenu {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
-/* Displaying the submenu when hovering over the parent item */
+/* displaying submenu when hovering over the parent storygames */
 .submenu-parent:hover .submenu {
   display: block;
 }
@@ -86,16 +83,15 @@ aside {
 }
 
 .submenu a:hover {
-  background-color: #f1f1f1;
+  background-color: #c5c5c562;
 }
 
-/* Ensure the parent menu item stays highlighted when hovering over the submenu */
+/* story games stays highlighted when hovering over the it */
 .submenu-parent:hover > a {
-  background-color: #ddd; /* Change this color to suit your design */
+  background-color: #a9a9a9b1;
 }
 
-/* Right Side Menu */
-/* Repeats the removal of list styles and padding for the right sidebar */
+/* right side menu */
 #rightSidebar ul {
   list-style-type: none;
   padding: 0;
@@ -114,51 +110,50 @@ aside {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-  /* Adjusts layout for screens narrower than 768px */
   #mainContainer {
-    flex-direction: column; /* Stacks flex items vertically */
+    flex-direction: column;
   }
 
   aside {
-    width: 100%; /* Each sidebar takes full width of the screen */
-    margin-bottom: 20px; /* Adds space between stacked items */
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 /*Style for the search input and button */
 input[type="search"],
 button[type="submit"] {
-  width: 100%; /* Makes these elements take the full width of their parent */
-  padding: 8px; /* Adds padding for visual comfort */
+  width: 100%;
+  padding: 8px;
 }
 
 input[type="search"] {
-  margin-top: 10px; /* Adds margin above the search box */
-  margin-bottom: 5px; /* Adds margin below the search box */
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 button[type="submit"] {
-  background-color: #1a73e8; /* Button color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  cursor: pointer; /* Cursor indicates a clickable element */
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #0c47a1; /* Button color on hover for visual feedback */
+  background-color: #0c47a1;
 }
 
-/* Styles for front page sections */
+/* style for front page sections */
 .content-section {
-  display: flex; /* Enables flexbox layout */
-  flex-wrap: wrap; /* Allows items to wrap to next line if needed */
-  justify-content: space-between; /* Distributes space between items */
-  margin: 20px 0; /* Vertical margin for separation */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .text-content,
 .image-content {
-  flex-basis: 48%; /* Sets a base width for these elements before they grow or shrink */
+  flex-basis: 48%;
 }
 
 .image-content {
@@ -166,20 +161,20 @@ button[type="submit"]:hover {
 }
 
 .image-content img {
-  width: 100%; /* Image takes full width of its container */
-  height: auto; /* Height is set automatically to keep aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .section-separator {
-  width: 100%; /* Sets the width to 100% of its container */
-  border: 1px solid #ccc; /* Adds a border */
-  margin: 40px 0; /* Adds vertical margin for spacing */
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 40px 0;
 }
 
 /* Styles for the footer */
 #footer {
-  background-color: #333; /* Darker grey background for the footer */
-  padding: 20px; /* Spacing inside the footer */
-  text-align: center; /* Centers the text inside the footer */
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   color: white;
 }
