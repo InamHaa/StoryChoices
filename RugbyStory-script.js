@@ -6,7 +6,7 @@ const gameStates = {
       during a school mix-up. Surprisingly, he discovers he has a interest for \
       the game. As he starts his training, Harris learns the basics of rugby, \
       slowly turning his initial confusion into a passion for the sport.",
-    image: "/acadmey.png",
+    image: "acadmey.png",
     choices: [
       { text: "Embrace rugby training", next: "firstMatch" },
       { text: "Quit and go back to books", next: "quitAcademy" },
@@ -20,7 +20,7 @@ const gameStates = {
       manages to score a try, surprising everyone, including himself. His team \
       cheers, and he feels a rush of excitement. This is the moment Harris truly \
       falls in love with rugby.",
-    image: "/firstbiggame.png",
+    image: "firstbiggame.png",
     choices: [
       { text: "Continue in the academy", next: "academyYears" },
       { text: "Feel overwhelmed and reconsider", next: "reconsider" },
@@ -33,7 +33,7 @@ const gameStates = {
       "Harris decides that rugby isn't for him and returns to his books. However, \
       the thrill of the game sticks with him. After a few days, he misses the \
       excitement and decides to give rugby one more shot.",
-    image: "/options.png",
+    image: "options.png",
     choices: [
       { text: "Return to rugby", next: "firstMatch" },
       { text: "Stay with books", next: "stayWithBooks" },
@@ -46,7 +46,7 @@ const gameStates = {
       "Feeling overwhelmed by the physical demands and pace of rugby, Harris \
       considers quitting. He talks to his coach, who encourages him to stick \
       with it and see how far he can go.",
-    image: "/reconsider.png",
+    image: "reconsider.png",
     choices: [
       { text: "Decide to continue", next: "academyYears" },
       { text: "Quit for good", next: "quitForGood" },
@@ -56,7 +56,7 @@ const gameStates = {
   stayWithBooks: {
     title: "HARRIS RETURNS TO LIBRARY",
     content: "It was all a dream, The End!.",
-    image: "/books.png",
+    image: "books.png",
     choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
   },
 
@@ -66,7 +66,7 @@ const gameStates = {
       "Over the next few years, Harris grows stronger and more skilled. He \
       becomes a key player in the academy, leading his team to several junior \
       championships. His reputation as a hardworking player spreads.",
-    image: "/acadmey.png",
+    image: "acadmey.png",
     choices: [
       { text: "Graduate to professional league", next: "professionalStart" },
       { text: "Stay to coach at the academy", next: "coachAcademy" },
@@ -77,7 +77,7 @@ const gameStates = {
     title: "ACADMEY COACHING THE ENDING",
     content:
       "Harris trains the under 17s, also hoping to get his professional training certficate - The End!.",
-    image: "/acadmey.png",
+    image: "acadmey.png",
     choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
   },
 
@@ -88,7 +88,7 @@ const gameStates = {
       and the games are more intense. But Harris uses his intellect and \
       unique perspective to devise new strategies, helping his team win crucial \
       matches.",
-    image: "/debut.png",
+    image: "debut.png",
     choices: [
       { text: "Aim for the national team", next: "nationalTeam" },
       { text: "Enjoy the club level", next: "enjoyClub" },
@@ -101,7 +101,7 @@ const gameStates = {
       "Harris's dream comes true when he's selected for the national team. He \
       plays his heart out, helping Scotland reach the Rugby World Cup finals. \
       It's a tough journey, but Harris is ready.",
-    image: "/scotland.png",
+    image: "scotland.png",
     choices: [
       { text: "Worldcup", next: "worldCupWin" },
       { text: "Worldcup", next: "worldCupLoss" },
@@ -114,7 +114,7 @@ const gameStates = {
       "In a dramatic final, Harris scores the winning try. He becomes a \
        national hero, inspiring countless young Scots. Harris proves that \
        even the most unexpected people can achieve greatness.",
-    image: "/worldcup.png",
+    image: "worldcup.png",
     choices: [
       { text: "Celebrate the victory", next: "celebrateVictory" },
       { text: "Retire at the top", next: "retireAtTop" },
@@ -127,7 +127,7 @@ const gameStates = {
       "Despite a heroic effort, Scotland falls just short in the World Cup \
       finals. Harris is proud of his team's achievement and looks forward \
       to the next challenge.",
-    image: "/lost.png",
+    image: "lost.png",
     choices: [{ text: "Try again next season", next: "nationalTeam" }],
   },
 
@@ -137,7 +137,7 @@ const gameStates = {
       "Despite a heroic effort, Scotland falls just short in the World Cup \
       finals. Harris is proud of his team's achievement and looks forward \
       to the next challenge - Thank you for playing!.",
-    image: "/lost.png",
+    image: "lost.png",
     choices: [{ text: "Return to Games Menu", action: "redirectToGames" }],
   },
 };
