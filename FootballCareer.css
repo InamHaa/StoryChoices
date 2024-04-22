@@ -96,6 +96,10 @@ aside {
   margin: 0 auto;
 }
 
+#Game-images {
+  display: none;
+}
+
 #storyContent {
   border: 2px solid black;
   padding: 15px;
