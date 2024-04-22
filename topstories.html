@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Story Choices - Random Stories!</title>
-    <link rel="stylesheet" href="/CSS/Game Site/random.css" />
+    <title>Story Choices - TOP STORIES!</title>
+    <link rel="stylesheet" href="/random.css" />
   </head>
   <body>
+    <!-- Header -->
     <header id="header">
       <h1>STORY CHOICES</h1>
-      <h3>RANDOM STORIES!</h3>
+      <h3>TOP STORIES!</h3>
     </header>
 
+    <!-- Main Container -->
     <div id="mainContainer">
       <!-- Left Sidebar -->
       <aside id="leftSidebar">
@@ -19,31 +21,38 @@
         <ul>
           <li><a href="/landingpage.html">HOME</a></li>
           <li class="submenu-parent">
-            <a href="Storygames.html">STORY GAMES</a>
+            <a href="#">STORY GAMES</a>
             <ul class="submenu">
-              <li><a href="/SubMenu/Random.html">RANDOM</a></li>
-              <li><a href="/SubMenu/Adventure.html">ADVENTURE</a></li>
-              <li><a href="/SubMenu/Sports.html">SPORTS</a></li>
-              <li><a href="/SubMenu/Racing.html">RACING</a></li>
-              <li><a href="/SubMenu/Fighting.html">FIGHTING</a></li>
+              <li><a href="/Random.html">RANDOM</a></li>
+              <li><a href="/Adventure.html">ADVENTURE</a></li>
+              <li><a href="/Sports.html">SPORTS</a></li>
+              <li><a href="/Racing.html">RACING</a></li>
+              <li><a href="/Fighting.html">FIGHTING</a></li>
             </ul>
           </li>
-          <li><a href="/Left Menu/info.html">HELP & INFO</a></li>
-          <li><a href="/Left Menu/aboutus.html">ABOUT US</a></li>
-          <li><a href="/Left Menu/Contact.html">CONTACT</a></li>
+          <li><a href="/info.html">HELP & INFO</a></li>
+          <li><a href="/aboutus.html">ABOUT US</a></li>
+          <li><a href="/Contact.html">CONTACT</a></li>
         </ul>
         <!-- Search Bar -->
         <form action="/search" method="get">
-          <input type="search" id="siteSearch" placeholder="Search Games" />
+          <input
+            type="search"
+            id="siteSearch"
+            name="q"
+            placeholder="Search Games"
+            aria-label="Search through site content"
+          />
           <button type="submit">Search</button>
         </form>
       </aside>
 
+      <!-- Main content section -->
       <main id="mainContent">
-        <!-- Stories -->
+        <!-- stories -->
         <div class="story-card">
           <img
-            src="/SubMenu/Football Career image.png"
+            src="/Football Career image.png"
             alt="story Image"
             class="story-image"
           />
@@ -54,7 +63,7 @@
               control your players career and lead them to success.
             </p>
           </div>
-          <!--button Play link it to stories-->
+          <!--button Play story -->
           <button
             class="play-button"
             onclick="location.href='/Stories/FootballCareer.html'"
@@ -64,7 +73,7 @@
         </div>
 
         <div class="story-card">
-          <img src="/SubMenu/maze.png" alt="story Image" class="story-image" />
+          <img src="/maze.png" alt="story Image" class="story-image" />
           <div class="story-description">
             <h3>The Maze</h3>
             <p>
@@ -77,14 +86,12 @@
           </button>
         </div>
 
+        <!-- Game Card for Game 2 -->
         <div class="story-card">
-          <img
-            src="/SubMenu/lostguy.png"
-            alt="story 2 Image"
-            class="story-image"
-          />
+          <img src="/lostguy.png" alt="story 2 Image" class="story-image" />
           <div class="story-description">
             <h3>The Lost Man</h3>
+            <p>-----------------------------------------------------</p>
             <p>
               A person that is lost in his dreams, and you can control him and
               guide him back to reality!
@@ -96,9 +103,10 @@
         </div>
 
         <div class="story-card">
-          <img src="/SubMenu/f1.png" alt="story Image" class="story-image" />
+          <img src="/f1.png" alt="story Image" class="story-image" />
           <div class="story-description">
             <h3>F1 RACING CHAMPIONSHIP</h3>
+            <p>---------------------------------------------------------</p>
             <p>
               F1 Racing Championship" brings the thrill of F1 racing to life.
               Dive into a story mode where you climb from rookie to world
@@ -112,11 +120,7 @@
         </div>
 
         <div class="story-card">
-          <img
-            src="/SubMenu/f1design.png"
-            alt="story 2 Image"
-            class="story-image"
-          />
+          <img src="/f1design.png" alt="story 2 Image" class="story-image" />
           <div class="story-description">
             <h3>DESIGN YOUR OWN CAR</h3>
             <p>
@@ -132,11 +136,7 @@
         </div>
 
         <div class="story-card">
-          <img
-            src="/SubMenu/rugby.png"
-            alt="story 2 Image"
-            class="story-image"
-          />
+          <img src="/rugby.png" alt="story 2 Image" class="story-image" />
           <div class="story-description">
             <h3>Rugby Career</h3>
             <p>
@@ -159,9 +159,9 @@
       <aside id="rightSidebar">
         <h2>OTHER</h2>
         <ul>
-          <li><a href="/Right Menu/topstories.html">TOP STORIES</a></li>
-          <li><a href="/Right Menu/newcreated.html">NEW STORIES</a></li>
-          <li><a href="/Right Menu/quizs.html">QUIZS</a></li>
+          <li><a href="/topstories.html">TOP STORIES</a></li>
+          <li><a href="/newcreated.html">NEW STORIES</a></li>
+          <li><a href="/quizs.html">QUIZS</a></li>
         </ul>
       </aside>
     </div>

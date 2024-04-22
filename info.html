@@ -4,44 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Story Choices - Immerse Yourself!</title>
-    <link rel="stylesheet" href="/CSS/Contact.css" />
+    <link rel="stylesheet" href="/Help:Info.css" />
   </head>
 
   <header id="header">
     <h1>STORY CHOICES</h1>
-    <h3>CONTACT US</h3>
+    <h3>HELP/INFO</h3>
   </header>
-</html>
 
-<!-- Aligning the sidemenu and main content -->
+  <!-- Aligning the sidemenu and main content -->
 <div id="mainContainer">
 
-  <!-- Left sidebar navigation -->
+  <!-- Left menu navigation -->
   <aside id="leftSidebar">
     <h2>MENU</h2>
+    <!--  menu with links to other pages-->
     <ul>
       <li><a href="/landingpage.html">HOME</a></li>
-      <!-- Stories Menu with Submenu parent -->
+      <!-- Stories Menu  with Submenu parent -->
       <li class="submenu-parent">
         <a href="#">STORY GAMES</a> 
         <!-- Submenu -->
         <ul class="submenu">
-          <li><a href="/SubMenu/Random.html">RANDOM</a></li>
-          <li><a href="/SubMenu/Adventure.html">ADVENTURE</a></li>
-          <li><a href="/SubMenu/Sports.html">SPORTS</a></li>
-          <li><a href="/SubMenu/Racing.html">RACING</a></li>
-          <li><a href="/SubMenu/Fighting.html">FIGHTING</a></li>
+          <li><a href="/Random.html">RANDOM</a></li>
+          <li><a href="/Adventure.html">ADVENTURE</a></li>
+          <li><a href="/Sports.html">SPORTS</a></li>
+          <li><a href="/Racing.html">RACING</a></li>
+          <li><a href="/Fighting.html">FIGHTING</a></li>
         </ul>
       </li>
-      <li><a href="/Left Menu/info.html">HELP & INFO</a></li>
-      <li><a href="/Left Menu/aboutus.html">ABOUT US</a></li>
-      <li><a href="/Left Menu/Contact.html">CONTACT</a></li>   
+      <li><a href="/info.html">HELP & INFO</a></li>
+      <li><a href="/aboutus.html">ABOUT US</a></li>
+      <li><a href="/Contact.html">CONTACT</a></li>   
     <!--Search Bar-->
     <form action="/search" method="get">
       <input
         type="search"
         id="siteSearch"
+        name="q"
         placeholder="Search Games"
+        aria-label="Search through site content"
       />
       <button type="submit">Search</button>
     </form>
@@ -50,15 +52,15 @@
 
   <!-- Main content section -->
   <main id="mainContent">
-    <h1>WHO ARE WE?</h1> 
+    <h1>YOU NEED HELP?</h1> 
   <section class="content-section">
     <div class="text-content">
-    <p>Reach out to us at <a href="mailto:40657496@live.napier.ac.uk">40657496@live.napier.ac.uk</a>and we'll make sure to help you continue your adventure without a hitch!</p>
-    </div>
+      <p>If you're looking for answers or need assistance, we're just an email away. </p>  
+      </div>
     <!-- img on welcome page-->
     <div class="image-content">
       <img
-      src="/Left Menu/Contact.png"
+      src="/Help:info.png"
       alt="Landing page image"
       width="500"
       height="500"
@@ -68,13 +70,13 @@
   </section>
   </main>
 
-  <!-- Right sidebar for additional links or tools -->
+  <!-- Right sidebar-->
   <aside id="rightSidebar">
     <h2>OTHER</h2>
     <ul>
-      <li> <a href="/Right Menu/topstories.html">TOP STORIES</a></li>
-      <li><a href="/Right Menu/newcreated.html">NEW STORIES</a></li>
-      <li>  <a href="/Right Menu/quizs.html">QUIZS</a></li>
+      <li> <a href="/topstories.html">TOP STORIES</a></li>
+      <li><a href="/newcreated.html">NEW STORIES</a></li>
+      <li>  <a href="/quizs.html">QUIZS</a></li>
     </ul>
   </aside>
 </div>
