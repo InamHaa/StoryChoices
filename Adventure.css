@@ -89,7 +89,6 @@ aside {
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 /* displaying the submenu when hovering over parent */
@@ -169,3 +168,13 @@ button[type="submit"]:hover {
   text-align: center;
   color: white;
 }
+
+/* refrences
+response design -
+  https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+search button -
+https://www.w3schools.com/howto/howto_css_search_button.asp
+
+reseting the default browser style -
+https://medium.com/awesome-css/resetting-browsers-default-css-46ef8d71a42d
