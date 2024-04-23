@@ -333,7 +333,7 @@ function showGameState(stateKey) {
     const button = document.createElement("button");
     button.textContent = choice.text;
     button.onclick = () => showGameState(choice.next);
-    choicesContainer.appendChild(button);
+    choicesContainer.appendChild(button); 
   });
 }
 
