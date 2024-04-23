@@ -40,6 +40,11 @@ aside {
   padding: 20px;
 }
 
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
 #leftSidebar h2 {
   color: black;
 }
