@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; /* removing the default padding */
+  padding: 0;
 }
 
 /* styling the header */
@@ -15,15 +15,15 @@
 
 /* hoding the sidemenus and  main content */
 #mainContainer {
-  display: flex; /* Enables flexbox layout, allowing child elements */
+  display: flex; /* Enables flexbox layoutallowing child elements */
 }
 
 /* Styles for both sidemenus */
 aside {
-  background-color: white; /* Light white background for the sidebars */
+  background-color: white;
   color: black;
   padding: 20px;
-  width: 20%; /* setting width of sidemenus to 20% of their parent container */
+  width: 20%; /* width of sidemenus to 20% of their parent container */
 }
 
 /* Styles for the main content area */
@@ -42,7 +42,7 @@ aside {
   margin-bottom: 20px;
   padding: 15px;
   display: flex;
-  align-items: center; /* Aligning items vertically */
+  align-items: center;
   justify-content: space-between; /* space between the image and the description */
 }
 
@@ -166,8 +166,8 @@ button[type="submit"]:hover {
 
 /* Styles for the footer */
 #footer {
-  background-color: #333; /* Darker grey background for the footer */
-  padding: 20px; /* Spacing inside the footer */
-  text-align: center; /* Centers the text inside the footer */
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   color: white;
 }

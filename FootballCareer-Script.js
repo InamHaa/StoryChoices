@@ -318,12 +318,12 @@ const gameStates = {
   },
 };
 
-// Function to display the game state on the screen
+// function to display the game state on the screen
 function showGameState(stateKey) {
   const state = gameStates[stateKey]; // Get the current state using the key
-  document.getElementById("gameTitle").textContent = state.title; // updating the game title
-  document.getElementById("storyContent").textContent = state.content; // updating the main content of story
-  document.getElementById("Game-images").src = state.image; // updating the images each time
+  document.getElementById("gameTitle").textContent = state.title;
+  document.getElementById("storyContent").textContent = state.content;
+  document.getElementById("Game-images").src = state.image;
 
   const choicesContainer = document.getElementById("readerChoices"); //clearing the previous choices
   choicesContainer.innerHTML = "";
@@ -339,3 +339,10 @@ function showGameState(stateKey) {
 
 // starting the game by start state
 showGameState("start");
+
+// refrences :
+// JS Functions document.getElementById - Used at the bottom functions to locate the id game title etc and update the title, content and image on each options clicked by user
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById -
+
+//button onclick JS - used for the buttons choices
+//https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/

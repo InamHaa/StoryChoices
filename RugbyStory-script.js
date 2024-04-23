@@ -144,9 +144,9 @@ const gameStates = {
 
 // function to display the gamestate on screen
 function showGameState(stateKey) {
-  document.getElementById("gameTitle").textContent = state.title; // updating the game title
-  document.getElementById("storyContent").textContent = state.content; // updating the main content of story
-  document.getElementById("Game-images").src = state.image; // updating the images each time
+  document.getElementById("gameTitle").textContent = state.title;
+  document.getElementById("storyContent").textContent = state.content;
+  document.getElementById("Game-images").src = state.image;
 
   const choicesContainer = document.getElementById("readerChoices"); //clearing the previous choices
   choicesContainer.innerHTML = "";

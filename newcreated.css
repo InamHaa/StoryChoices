@@ -2,28 +2,28 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; /* removing the default padding */
+  padding: 0;
 }
 
 /* styling the header */
 #header {
   background-color: #333;
   color: #fff;
-  padding: 20px; /* spacign inside header */
+  padding: 20px;
   text-align: center;
 }
 
 /* hoding the sidemenus and  main content */
 #mainContainer {
-  display: flex; /* Enables flexbox layout, allowing child elements */
+  display: flex;
 }
 
 /* Styles for both sidemenus */
 aside {
-  background-color: white; /* Light white background for the sidebars */
+  background-color: white;
   color: black;
   padding: 20px;
-  width: 20%; /* setting width of sidemenus to 20% of their parent container */
+  width: 20%;
 }
 
 /* Styles for the main content area */
@@ -42,8 +42,8 @@ aside {
   margin-bottom: 20px;
   padding: 15px;
   display: flex;
-  align-items: center; /* Aligning items vertically */
-  justify-content: space-between; /* space between the image and the description */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .story-image {
@@ -76,7 +76,7 @@ aside {
 }
 
 #leftSidebar ul li {
-  padding: 8px 0; /* padding to each option easier to read */
+  padding: 8px 0;
 }
 
 #leftSidebar ul li a {
@@ -91,7 +91,6 @@ aside {
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 /* displaying the submenu when hovering over parent */
@@ -164,10 +163,10 @@ button[type="submit"]:hover {
   background-color: #0c47a1;
 }
 
-/* Styles for the footer */
+/* footer */
 #footer {
-  background-color: #333; /* Darker grey background for the footer */
-  padding: 20px; /* Spacing inside the footer */
-  text-align: center; /* Centers the text inside the footer */
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   color: white;
 }

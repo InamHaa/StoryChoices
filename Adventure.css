@@ -9,29 +9,27 @@
 #header {
   background-color: #333;
   color: #fff;
-  padding: 20px; /* spacign inside header */
+  padding: 20px;
   text-align: center;
 }
 
 /* hoding the sidemenus and  main content */
 #mainContainer {
-  display: flex; /* Enables flexbox layout, allowing child elements */
+  display: flex;
 }
 
 /* Styles for both sidemenus */
 aside {
-  background-color: white; /* Light white background for the sidebars */
+  background-color: white;
   color: black;
   padding: 20px;
-  width: 20%; /* setting width of sidemenus to 20% of their parent container */
+  width: 20%;
 }
 
 /* Styles for the main content area */
 #mainContent {
   background-color: white;
-  min-height: calc(
-    100vh - 150px
-  ); /* DONT CHANGE the 150px to account for the header and footer height */
+  min-height: calc(100vh - 150px);
   flex-grow: 1;
   padding: 20px;
 }
@@ -42,8 +40,8 @@ aside {
   margin-bottom: 20px;
   padding: 15px;
   display: flex;
-  align-items: center; /* Aligning items vertically */
-  justify-content: space-between; /* space between the image and the description */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .story-image {
@@ -76,7 +74,7 @@ aside {
 }
 
 #leftSidebar ul li {
-  padding: 8px 0; /* padding to each option easier to read */
+  padding: 8px 0;
 }
 
 #leftSidebar ul li a {
@@ -166,8 +164,8 @@ button[type="submit"]:hover {
 
 /* Styles for the footer */
 #footer {
-  background-color: #333; /* Darker grey background for the footer */
-  padding: 20px; /* Spacing inside the footer */
-  text-align: center; /* Centers the text inside the footer */
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   color: white;
 }
