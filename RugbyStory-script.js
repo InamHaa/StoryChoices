@@ -142,8 +142,9 @@ const gameStates = {
   },
 };
 
-// function to display the gamestate on screen
+// function to display the game state on the screen
 function showGameState(stateKey) {
+  const state = gameStates[stateKey]; // Get the current state using the key
   document.getElementById("gameTitle").textContent = state.title;
   document.getElementById("storyContent").textContent = state.content;
   document.getElementById("Game-images").src = state.image;
@@ -160,7 +161,7 @@ function showGameState(stateKey) {
   });
 }
 
-//(DONT MOVE starts the gamestate )
+// starting the game by start state
 showGameState("start");
 
 // refrences :
